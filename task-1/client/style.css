@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin: 10px 0;
+}
+
+button {
+    padding: 6px 20px;
+    margin: 40px auto;
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+    font-size: 14px;
+}
+thead{
+    background-color: orange;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
