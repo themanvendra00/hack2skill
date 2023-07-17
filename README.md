@@ -39,12 +39,12 @@ This is a web application that fetches and displays data from two MongoDB collec
 3. Start the server:
 
 ```
-npm run Start
+    npm run Start
 ```
 
 4. Open the application in your browser:
 ```
-http://localhost:8080/
+    http://localhost:8080/
 ```
 
 ## Usage
