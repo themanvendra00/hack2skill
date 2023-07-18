@@ -54,5 +54,5 @@ This is a web application that fetches and displays data from two MongoDB collec
 - The fetched data will be displayed in the table.
 
 ## Task-2
-- Frontend deployed link: https://fanciful-jalebi-c59cdf.netlify.app/
+- Frontend deployed link: https://elegant-sfogliatella-782c93.netlify.app/
 - Backend deployed link: https://hack2skill-task2-production.up.railway.app/
