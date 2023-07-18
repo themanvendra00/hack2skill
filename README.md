@@ -31,20 +31,27 @@ This is a web application that fetches and displays data from two MongoDB collec
     git clone https://github.com/themanvendra00/hack2skill.git
 ```
 
-2. Install the dependencies:
+2. Set up environment variables:
+   - Create a .env file in the root folder.
+     ```
+     PORT:your_port
+     MONGODB_URI=mongodb://username:password@your-mongodb-uri
+     ```
+
+3. Install the dependencies:
 
 ```
-    cd hack2skill
+    cd hack2skill/task-1
     npm install
 ```
 
-3. Start the server:
+4. Start the server:
 
 ```
-    npm run Start
+    npm run server
 ```
 
-4. Open the application in your browser:
+5. Open the application in your browser:
 ```
     http://localhost:8080/
 ```
@@ -56,3 +63,59 @@ This is a web application that fetches and displays data from two MongoDB collec
 ## Task-2
 - Frontend deployed link: https://elegant-sfogliatella-782c93.netlify.app/
 - Backend deployed link: https://hack2skill-task2-production.up.railway.app/
+
+This is a Node.js application that continuously fetches the latest videos from YouTube based on a search query and stores them in a MongoDB database. The application also provides APIs to retrieve paginated video data and perform basic searches.
+
+## Features
+
+- Fetches the latest videos from YouTube API based on a predefined search query at regular intervals.
+- Stores video data (title, description, publishing datetime, thumbnails URLs) in a MongoDB database.
+- Provides a GET API endpoint to retrieve stored video data in a paginated response sorted by published datetime in descending order.
+- Implements a basic search API to search stored videos by title and description.
+
+1. Clone the repository:
+
+```
+    git clone https://github.com/themanvendra00/hack2skill.git
+```
+
+2. Set up environment variables:
+   - Create a .env file in the root folder.
+     ```
+     PORT:your_port
+     YOUTUBE_API_KEY=key
+     MONGODB_URI=mongodb://username:password@your-mongodb-uri
+     ```
+
+3. Install the dependencies:
+
+```
+    cd hack2skill/task-2
+    npm install
+```
+
+4. Start the server:
+
+```
+    npm run server
+```
+
+5. Open the application in your browser:
+```
+    http://localhost:8080/
+```
+
+### APIs
+- GET /api/videos: Get stored video data in a paginated response, sorted by published datetime in descending order. Use page and perPage query parameters for pagination (e.g., /api/videos?page=1&perPage=10).
+
+- GET /api/search: Search stored videos using their title and description. Use the query query parameter to specify the search query (e.g., /api/search?query=example).
+
+### Customization
+Modify the YOUR_SEARCH_QUERY in app.js to specify your desired search query for fetching videos from YouTube.
+
+### Docker
+To run the application using Docker, use the following commands:
+
+```
+docker pull themanvendra/youtube-api.0.0.1.RELEASE
+```
