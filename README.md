@@ -1,6 +1,8 @@
 # HACK2SKILL - ASSIGNMENT
 
 ## Task - 1
+- Frontend deployed link: https://fanciful-jalebi-c59cdf.netlify.app/
+- Backend deployed link: https://hack2skill-task1-production.up.railway.app/
 
 This is a web application that fetches and displays data from two MongoDB collections using joins. It provides a simple user interface to trigger the data retrieval and presents the fetched data in a tabular format.
 
@@ -51,3 +53,6 @@ This is a web application that fetches and displays data from two MongoDB collec
 - Click the "Fetch Data" button to trigger the data retrieval.
 - The fetched data will be displayed in the table.
 
+## Task-2
+- Frontend deployed link: https://elegant-sfogliatella-782c93.netlify.app/
+- Backend deployed link: https://hack2skill-task2-production.up.railway.app/
