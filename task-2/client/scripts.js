@@ -9,7 +9,7 @@ const videosPerPage = 12;
 // Function to fetch videos
 async function fetchVideos(page, perPage) {
   try {
-    const response = await fetch(`http://localhost:8080/api/videos?page=${page}&perPage=${perPage}`);
+    const response = await fetch(`https://hack2skill-task2-production.up.railway.app/api/videos?page=${page}&perPage=${perPage}`);
     const data = await response.json();
 
     const videos = data.videos;
@@ -44,7 +44,7 @@ async function searchVideos() {
     }
   
     try {
-      const response = await fetch(`http://localhost:8080/api/search?query=${encodeURIComponent(searchQuery)}`);
+      const response = await fetch(`https://hack2skill-task2-production.up.railway.app/api/search?query=${encodeURIComponent(searchQuery)}`);
       const data = await response.json();
   
       const videos = data.videos;

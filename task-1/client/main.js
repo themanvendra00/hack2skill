@@ -1,5 +1,5 @@
 document.getElementById("fetchBtn").addEventListener("click", () => {
-  fetch("http://localhost:8080/fetch-data")
+  fetch("https://hack2skill-task1-production.up.railway.app/fetch-data")
     .then((response) => response.json())
     .then((data) => {
       const tableBody = document.getElementById("dataBody");
